@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+###
+# your production files 
+*_live.json
+*_live.db
+python_scripts/__pycache__/
+
+python_scripts/\.vscode/launch\.json
+
+webgraph/client/\.vscode/
+
+webgraph/\.vscode/

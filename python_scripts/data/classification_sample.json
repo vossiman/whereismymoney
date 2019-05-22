@@ -1,0 +1,96 @@
+{
+    "grouping": {
+        "income": {
+            "regular salary": {
+                "text": ["Lohn/Gehalt"]
+            },
+            "travel expenses": {
+                "text": ["Reisespesen"]
+            }
+        },
+        "cash": {
+            "Bankomat": {
+                "text": ["SB-Auszahlung", "AUTOMAT", "ATM"]
+            }
+        },
+        "leisure": {
+            "amazon": {
+                "text": ["Amazon", "AMZN Mktp", "Prime"]
+            },
+            "Games": {
+                "text": ["Nintendo", "STEAMGAMES.COM", "PAYPAL *ORIGIN", "BLIZZARD", "PAYPAL *MAGICONLINE", "MHA MULLER", "PlaystationNetwork", "LIBRO"]
+            },
+            "elektronics": {
+                "text": ["SATURN", "WWW.CYBERPORT.DE", "Computerhaus"]
+            },
+
+            "streaming": {
+                "text": ["NETFLIX", "TWITCH", "DAZN", "SKY ABO", "SPOTIFY", "Audible"]
+            }
+        },
+        "travel": {
+            "transport": {
+                "text": ["AUSTRIAN AI", "EUROWINGS", "EASYJET", "TAXI", "UBER BV", "UBER TRIP", "WIENERLIN", "WIENER LINIEN", "OEBB", "WR. LINIEN"]
+            }
+        },
+        "living": {
+            "rent": {
+                "text": ["MIETE"]
+            },
+            "furniture": {
+                "text": ["IKEA",
+                    "MOBELIXDANKT"
+                ]
+            },
+            "phone": {
+                "text": ["UPC", "HUTCHISON", "T-MOBILE RECHNUNG", "DREI SHOP"]
+            },
+            "GIS": {
+                "text": ["GIS Gebühren Info Service", "Vorschreibung"]
+            },
+            "power": {
+                "text": ["Strom Abrechnung", "Strom Teilbetrag", "Strom/Gas"]
+            }
+        },
+        "shopping": {
+            "Billa": {
+                "text": ["BILLA"]
+            },
+            "Hofer": {
+                "text": ["HOFER"]
+            },
+            "Merkur": {
+                "text": ["MERKUR"]
+            },
+            "Spar": {
+                "text": ["SPAR DANKT"]
+            },
+            "Clothing": {
+                "text": ["C&A", "HERVIS", "BONPRIX", "PEEK & CLOPPENBURG", "DEICHMANN"]
+            },
+            "Household": {
+                "text": ["OBI BAU", "BAUMAX", "HORNBACH"]
+            }
+        },
+        "car": {
+            "Drive Now": {
+                "text": ["DRIVENOW", "DRIVE NOW"]
+            },
+            "car2go": {
+                "text": ["daimler", "car2go", "moovel GmbH", "Doc2011"]
+            },
+            "Rentals": {
+                "text": ["SIXT", "BUCHBINDER", "MEGADRIVE", "HERTZ", "EUROPCAR", "RENTALCARS.COM", "AVIS WIEN"]
+            },
+            "Tanken": {
+                "text": ["TANKSTELLE", "SHELL"]
+            },
+            "OEAMTC": {
+                "text": ["OEAMTC"]
+            }
+        }
+    },
+    "own_transfer": {
+        "Rundungssparen": "1"
+    }
+}

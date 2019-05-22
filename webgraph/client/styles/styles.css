@@ -1,0 +1,109 @@
+.node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+  }
+
+  .node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  .datetimepicker-container {
+      width: 200px;
+  }
+
+  .link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+  }
+
+  .link:hover {
+    stroke-opacity: .5;
+  }
+
+  div.tooltip {
+    position: absolute;
+    padding: 2px;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+
+  div.tooltip_test {
+    position: absolute;
+    padding: 2px;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+
+  .vertical-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  div.sankey_tooltip {
+    position: relative;
+    display: inline-flex;
+    /*width: 250px;*/
+    /*height: 46px;*/
+    padding: 2px;
+    /* color: green;*/
+    /*background: lightsteelblue;*/
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    text-align: center;
+  }
+
+  div.tt_box {
+    display: inline-block;
+    height: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 4px;
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  div.tt_box1 {
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0;
+
+  }
+
+  div.tt_box2 {
+    text-align: left;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .tt_money_text_formatting {
+    color: red;
+    font-weight: bold;
+  }
+
+  .Centered {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .Centerer {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  div.row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  #my_dataviz {
+    align-self: center;
+  }
+

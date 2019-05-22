@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Thousand</title>
+
+    <script src="libraries/jquery-3.4.0.min.js"></script>
+</head>
+
+<body>
+    <div class="text">
+
+    </div>
+</body>
+<script>
+    var largeNumber = 168144;
+
+    function iterIntToFormatStr(number, iterNr, iterStr) {
+        var group = 1
+        
+        if (iterNr != undefined)
+            group = iterNr
+        
+        var str = ''
+        if (iterStr != undefined) {
+            str = iterStr
+        } else {
+            str = String(number)
+        }
+        var new_size = number * (group)
+        if (number > Math.pow(1000, group)) {
+            
+            // split an länge - (3*iterNr)
+            slice_start = str.length-(3*group)-(group-1)
+            slice_end = str.length
+            slice_1 = str.slice(0, slice_start)
+            slice_2 = str.slice(slice_start, slice_end)
+            new_str = [slice_1, slice_2].join('.')
+            $('div.text').append(`${new_str}<br/>`)
+            return iterIntToFormatStr(number, group+1, new_str)            
+        } else {
+            return iterStr
+        }
+    }
+    final_str = iterIntToFormatStr(largeNumber,1)
+    $('div.text').append(`FINAL ${final_str}<br/>`)
+</script>
+
+</html>

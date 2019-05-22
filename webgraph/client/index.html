@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>SANKEY Experiment</title>
+<!------------------------------------------------------------------------------------------->
+<!--                                         JQUERY                                        -->
+<!------------------------------------------------------------------------------------------->
+<script src="libraries/jquery-3.4.0.min.js"></script>
+
+<!------------------------------------------------------------------------------------------->
+<!--                                          D3JS                                         -->
+<!------------------------------------------------------------------------------------------->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!------------------------------------------------------------------------------------------->
+<!--                                         Bootstrap                                     -->
+<!------------------------------------------------------------------------------------------->
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="libraries/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+<script src="libraries/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>-->
+<!------------------------------------------------------------------------------------------->
+<!--                                  DATE TIMER PICKER STUFF                              -->
+<!------------------------------------------------------------------------------------------->
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.standalone.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+<!------------------------------------------------------------------------------------------->
+<!--                                         MY SCRIPTS                                    -->
+<!------------------------------------------------------------------------------------------->
+<link rel="stylesheet" href="styles/styles.css">
+<script src="libraries/my_initscript.js"></script>
+<script src="libraries/sankey.js"></script>
+<script src="libraries/sankey_handler.js"></script>
+<script src="libraries/table_handler.js"></script>
+<script src="libraries/stackedchart_handler.js"></script>
+<!------------------------------------------------------------------------------------------->
+<!--                                          BODY                                         -->
+<!------------------------------------------------------------------------------------------->
+
+<body>
+  <div class="container container_graphs">
+    <div class="row">
+      <!-------------------  ROW SANKEY --------------------->
+      <div class="col col-xl-6 report_container text-center"></div>
+
+      <div class="col col-xl-6 text-center">
+        <div id="my_dataviz"></div>
+      </div>
+    </div>
+    <!-------------------  ROW CONTROLS --------------------->
+    <div class="row">
+      <div class="col col-xl-3">&nbsp;</div>
+      <div class="col col-xl-6 text-center">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control search_form" placeholder="Search" aria-label="search">
+          <div class="input-group-append">
+              <button class="btn btn-outline-primary reset_button" type="button">clear</button>
+            </div>
+        </div>
+      </div>
+      <div class="col col-xl-3">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="col col-xl-12 text-center">
+        <div class="well well-sm">
+          showing from <b><text class='stat start_date'>01.01.2012</text></b> to <b><text
+              class='stat end_date'>01.05.2019</text></b> - Total Sum <b><text class='stat sum_value'>1.234</text> €</b>
+        </div>
+      </div>
+    </div>
+    <!-------------------  TABLE --------------------->
+    <div class="row">
+      <div class="container">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Accountname</th>
+              <th scope="col">Partnername</th>
+              <th scope="col">Text</th>       
+              <th scope="col">Class1</th>     
+              <th scope="col">Class2</th>         
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>val</td>
+              <td>val</td>
+              <td>val</td>
+              <td>val</td>
+              <td>val</td>
+              <td>val</td>
+              <td>val</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class='result'></div>
+    </div>
+  </div>
+  <!-------------------  TOOLTIP --------------------->
+  <div class="tooltip">
+    <div class='sankey_tooltip'>
+      <div class='tt_box tt_box1'>
+        <span class="Centerer"></span>
+        <span class='Centered'>Spent: <br /><text class='tt_money_text_formatting'><text
+              class='tt_money_text'>1.234</text> €</text></span>
+      </div>
+      <div class='tt_box tt_box2'>
+        <span class="Centerer"></span>
+        <span class='Centered'>
+          Spending type:<br />
+          <text class="tt_class_text">Class #1</text>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
