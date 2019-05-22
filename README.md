@@ -1,5 +1,12 @@
 # whereismymoney
-browser based visualization &amp; categorization of cash flow; including import scripts
+browser based interactive visualization &amp; categorization of cash flow; including import scripts
+
+this tool should help finding where your money goes to ;)
+
+able to
+  * filter on 2 levels of categories in a sankey diagram (left top)
+  * filter on time in the stacked area chart (right top)
+  * filter table based on elasticsearch entry
 
 this is my first public package so it lacks a lot of QoL features for setting up, switching between git version & local data and so on..
 
@@ -8,7 +15,7 @@ this is my first public package so it lacks a lot of QoL features for setting up
 
 # How to set up
 1. Put your bankstatements into the /import folder (& delete the sample file if you dont want it imported)
-2. open the statements.db, Accounts table needs to be filled. 
+2. rename /db/statements_example.db to /db/statements_live.db, Accounts table needs to be filled. 
    
    **IMPORTANT:** import script iterates through /import folder and looks for the IBAN in the file name
 
